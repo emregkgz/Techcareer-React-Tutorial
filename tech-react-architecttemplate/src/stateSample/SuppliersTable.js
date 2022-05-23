@@ -82,7 +82,7 @@ function SuppliersTable() {
           <div style={searchStyle}>
             <input
               type="text"
-              placeholder="Seacrh by name..."
+              placeholder="Search by name..."
               value={searchByName}
               onChange={(e) => setSearchByName(e.target.value)}
             />
@@ -91,7 +91,7 @@ function SuppliersTable() {
               variant="success"
               onClick={() => searchSuppliers()}
             >
-              Seacrh
+              Search
             </Button>
           </div>
           <div>
