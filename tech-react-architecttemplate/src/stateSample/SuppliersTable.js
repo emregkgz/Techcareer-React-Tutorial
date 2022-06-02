@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Table, Button } from "react-bootstrap";
-import { suppliers } from "../data/suppliers";
+import { suppliers } from "./data/suppliers";
 
 function SuppliersTable() {
   const [supplierList, setSupplierList] = useState(suppliers);

@@ -1,14 +1,16 @@
-import Content from "./ArchitectTemplate/Content";
-import Header from "./ArchitectTemplate/Header";
-import Navbar from "./ArchitectTemplate/Navbar";
-import Footer from "./ArchitectTemplate/Footer";
-import SuppliersTable from "./stateSample/SuppliersTable";
+import { Routes, Route } from "react-router-dom";
+import ProductList from "./reduxSample/components/ProductList";
+import CartPage from "./reduxSample/components/CardPage";
 
 function App() {
   return (
     <>
-      <SuppliersTable />
-      {/* <Navbar />
+      <Routes>
+        <Route path="/" element={<ProductList />}></Route>
+        <Route path="/urunler/:id" element={<CartPage />}></Route>
+      </Routes>
+      {/*<SuppliersTable />
+       <Navbar />
       <Header />
       <Content />
       <Footer /> */}
